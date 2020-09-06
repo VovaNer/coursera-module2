@@ -1,0 +1,74 @@
+/* The browser should display a desktop version of the site when the width of the browser window is 992px and above. Tablet view should appear only if the width of the browser window is between 768px and 991px, inclusively. Mobile view should appear only if the width of the browser is equal to or less than 767px. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: 'Neucha', cursive;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 175%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    width: 32%;
+    background-color: #ccc;
+    padding: 40px 10px 10px 10px;
+    border: 1px solid #000;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.box-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 40px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 125%;
+}
+
+.box-title1 {
+    background-color: rgb(223, 165, 165);
+}
+
+.box-title2 {
+    background-color: rgb(172, 50, 50);
+    color: #fff;
+}
+
+.box-title3 {
+    background-color: rgb(211, 204, 114);
+}
+
+@media (max-width: 991px) {
+    .box {
+        width: 49%;
+    }
+}
+
+@media (max-width: 767px) {
+    .box {
+        width: 100%;
+    }
+}
